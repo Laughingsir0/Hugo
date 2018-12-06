@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Web Tutorials">
+<meta name="keywords" content="HTML, 古天樂">
+<meta name="author" content="江昱俊">
+<title>古天樂</title>
+
+<style>
+	#background{
+background-image: url("https://image.tpwang.net/image/%E5%8F%A4/artist-%E5%8F%A4%E5%A4%A9%E6%A8%82/%E5%8F%A4%E5%A4%A9%E6%A8%82110857.jpg") ;background-repeat: no-repeat;
+background-size: cover; height:100%; width:100%;
+z-index: -1; opacity: 0.8;background-position:0% 0%;margin-left: -8px;margin-top: -21px; position: absolute;background-attachment: fixed;position: fixed;
+</style>
+<script>
+	function myFunction() {document.getElementById('demo').style.display='block'}
+	alert("屁眼痛")
+	
+</script>
+</head>
+<body>
+<div id="background" style="" class=""></div>
+<h1>古天樂</h1>
+
+<p id="demo" style="display: none;">超帥</p>
+<button type="button" onclick="myFunction()">介紹</button>
+
+
+<a href="https://zh.wikipedia.org/wiki/%E5%8D%95%E8%BA%AB%E7%94%B7%E5%A5%B3"><script>
+function content1(){
+document.getElementById("content").innerHTML="單身男女";
+}
+function content2(){
+document.getElementById("content").innerHTML="單身男女2";
+}
+</script></a>
+<p id="content">好看電影</p>
+<button type="button" onclick="content1()">電影</button>
+<button type="button" onclick="content2()">電影2</button>
+
+
+<script>
+	document.write("<p>" + Date() + "</p>")
+</script>
+
+
+<form>
+惡搞: <input type="text" id="name">
+</form>
+<button type="button" onclick="myFunc()">惡鬧</button>
+<script>
+function myFunc(){
+alert("子軒" + document.getElementById("name").value+"很會鬧");
+}
+</script>
+
+<br>
+<script>
+var x = "3";
+var y = "5";
+var z = x + y;
+document.write("x + y = " + z);
+</script>
+
+<script>
+var x=5+5;
+document.write("<p>" + x + "</p>");
+var y="5"+"5";
+document.write("<p>" + y + "</p>");
+var z=5+"5";
+document.write("<p>" + z + "</p>");
+</script>
+
+<p id="demo1"></p>
+<script>
+var cars = ["子軒","惡搞","惡鬧"];
+document.getElementById("demo1").innerHTML = cars[0] + " " + cars[2];
+</script>
+<p id="demo2"></p>
+<script>
+var person = {firstName : "子軒",lastName : "Doe",age : 19,};
+document.getElementById("demo2").innerHTML = person.firstName + " is " + person.age + " years old.";
+</script>
+
+<form>
+請輸入身高 (公尺): <input type="text" id="height">
+</form>
+<form>
+請輸入體重 (公斤): <input type="text" id="weight">
+</form>
+<p id="BMI"></p>
+<button type="button" onclick="cal()">BMI</button>
+<script>
+function cal(){var height = document.getElementById("height").value;var weight = document.getElementById("weight").value;var bmi = weight/(height*height);document.getElementById("BMI").innerHTML= bmi;}
+</script>
+
+<script>
+var age = 16;
+if (age < 18) {document.write("<p>" + "too young" + "</p>");}
+</script>
+
+<script>
+var d=new Date();
+var time=d.getHours();
+if (time<10) {document.write("<b>Good morning</b>");}
+</script>
+
+<script>
+var d = new Date();
+var time = d.getHours();
+if (time < 11) {document.write("<b>Good morning</b>");}
+else {document.write("<b>Good day</b>");}
+</script>
+
+<br>
+<script>
+var d = new Date();
+var time = d.getHours();
+if (time<11) {
+document.write("<b>Good morning</b>");}
+else if (time>=11 && time<18) {document.write("<b>Good day</b>");}
+else {document.write("<b>Good evening!</b>");}
+</script>
+
+<form>
+Please calculate 3 * 7: <input type="text" id="answer">
+</form>
+<button type="button" onclick="eval()">Check!</button>
+<script>
+function eval(){
+var answer=document.getElementById("answer").value;
+if (answer=="21"){alert("答對了!");}
+else{alert("錯!");}
+}
+</script>
+
+<form>
+Please input one number (1-100): <input type="text" id="number">
+</form>
+<button type="button" onclick="eval()">Guess!</button>
+<script>
+var target=Math.floor((Math.random() * 100) + 1);
+console.log(target);
+function eval(){
+if(document.getElementById("number").value > target){alert("猜小一些");}
+else if (document.getElementById("number").value < target){alert("猜大一些");}
+else{alert("Bingo!");}
+}
+</script>
+<br>
+<script>
+var d=new Date();
+var theDay=d.getDay();
+switch (theDay){
+case 5:
+document.write("Finally Friday");
+break;
+case 6:
+document.write("Super Saturday");
+break;
+case 0:
+document.write("Sleepy Sunday");
+break;
+default:
+document.write("I'm looking forward to this weekend!");
+}
+</script>
+<form>
+Press any key: <input type="text" onkeydown="eval(event)">
+</form>
+
+<script>
+function eval(event) {
+var x = event.which || event.keyCode;
+console.log(x);
+}
+</script>
+<form>Press any key: <input type="text" onkeydown="eval(event)"></form>
+<script>
+function eval(event) {
+var x = event.which || event.keyCode;
+switch(x){
+case 38:
+alert("上");
+break;
+case 40:
+alert("下");
+break;
+case 37:
+alert("左");
+break;
+case 39:
+alert("右");
+break;
+}
+}
+</script>
+</body>
+</html>
