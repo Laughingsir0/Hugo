@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<style>
+.animate {
+width: 1px; height: 1px; position: absolute; background: blue;
+}
+</style>
+<body>
+<script>
+for (variable=1;variable<=100000;variable=variable+1) {
+var x = Math.floor((Math.random() * 800) + 1);
+var y = Math.sqrt(640000-x*x) - Math.floor((Math.random() * 800) + 1);
+var elem = document.createElement("div");
+elem.setAttribute("class", "animate");
+elem.style.left = x + "px";
+elem.style.top = y + "px";
+document.body.appendChild(elem);
+}
+</script>
+<p id="demo"></p>
+<script>
+var text = "";
+var i = 0;
+while (i < 10) {
+text = text + "The number is " + i + "<br>";
+i = i + 1;
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+<p id="clock"></p>
+<script>
+function display(){
+var date = new Date();
+var hour = date.getHours();
+var min = date.getMinutes();
+var sec = date.getSeconds();
+document.getElementById("clock").innerHTML = hour + ": " + min + ": " + sec;
+}
+</script>
+</body></html>

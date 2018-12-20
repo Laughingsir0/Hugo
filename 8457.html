@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Web Tutorials">
+<meta name="keywords" content="HTML, 古天樂">
+<meta name="author" content="江昱俊">
+<style>
+#header {height:150px;background-color:#f9c81e;padding:1em}
+#article {height:400px;background-color:#fffaf3;padding:1em}
+</style>
+</head>
+<body>
+<div id="header"><h1>Header</h1></div>
+<div id="article">
+<button onclick="display();">Click me!</button>
+<p id="content">Hello!</p>
+</div>
+<script>
+function display(){
+var x = document.getElementById("content");
+if (x.style.display === "none") {
+x.style.display = "block";
+} else {
+x.style.display = "none";
+}
+}
+</script>
+</body>
+</html>

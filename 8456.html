@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form>
+Press any key: <input type="text" onkeydown="eval(event)">
+</form>
+
+<script>
+function eval(event) {
+var x = event.which || event.keyCode;
+console.log(x);
+}
+</script>
+</body>
+</html>
